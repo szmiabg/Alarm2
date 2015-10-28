@@ -5,29 +5,13 @@ import android.graphics.drawable.StateListDrawable;
 import android.util.AttributeSet;
 import android.widget.CheckBox;
 
-/**
- * Created by Miki on 28/10/15.
- */
-public class Checkbox extends CheckBox {
 
-   //private CheckBox checkbox;
+public class Checkbox extends CheckBox {
 
     public Checkbox(Context context, AttributeSet attrs) {
         super(context, attrs);
         setButtonDrawable(new StateListDrawable());
 
-        /*//Manage attributes
-        int[] attributeSet = {
-                android.R.attr.checked
-        };
-
-        TypedArray a = getContext().getTheme().obtainStyledAttributes(attrs, attributeSet, 0, 0);
-
-        try {
-            checkbox.setChecked(a.getBoolean(1, false));
-        } finally {
-            a.recycle();
-        }*/
     }
     @Override
     public void setChecked(boolean checked){
@@ -40,10 +24,5 @@ public class Checkbox extends CheckBox {
             this.setBackgroundResource(R.drawable.deselect);
         }
         super.setChecked(checked);
-        //checkbox.setChecked(checked);
     }
-
-    /*public boolean isChecked() {
-        return checkbox.isChecked();
-    }*/
 }

@@ -2,9 +2,7 @@ package com.appanyz.android.alarm2;
 
 import android.net.Uri;
 
-/**
- * Created by Miki on 28/10/15.
- */
+
 public class AlarmModel {
 
     public static final int MONDAY = 0;
@@ -19,9 +17,7 @@ public class AlarmModel {
     public int timeHour;
     public int timeMinute;
     private boolean repeatingDays[];
-    //public boolean repeatWeekly;
     public Uri alarmTone;
-    //public String name;
     public boolean isEnabled;
 
     public AlarmModel(){
